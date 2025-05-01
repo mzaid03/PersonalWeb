@@ -183,7 +183,7 @@ function App() {
  initial="hidden"
  animate="visible"
  >
- <motion.p variants={staggerItem}>mdyasinzaidabir@gmail.com | Riverside, CA</motion.p>
+ <motion.p variants={staggerItem}>mdyasinzaidabir@gmail.com | Lake Elsinore, CA</motion.p>
  <motion.p variants={staggerItem}>
  <a href="https://www.linkedin.com/in/mohammed-zaid-304a9b279/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
  <a href="https://github.com/mzaid03" target="_blank" rel="noopener noreferrer"> GitHub</a> 
