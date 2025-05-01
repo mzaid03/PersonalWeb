@@ -196,8 +196,10 @@ function App() {
  animate={{ opacity: 1, y: 0 }}
  transition={{ delay: 0.6, duration: 0.8 }}
  >
- Computer Science & Mathematics 3rd Year with experience in robotics, machine learning,
- and team leadership. Passionate about solving complex problems and developing innovative solutions.
+ Hi, I'm Mohammed Zaid.
+ I'm a 3rd-year Computer Science & Mathematics student with hands-on experience in robotics, 
+ machine learning, and leading high-performing teams. I thrive on solving complex problems and 
+ building innovative solutions that make a difference. Welcome to my digital space, where curiosity meets code.
  </motion.p>
 
  <motion.div 
