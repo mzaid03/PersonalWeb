@@ -197,7 +197,7 @@ function App() {
  transition={{ delay: 0.6, duration: 0.8 }}
  >
  Hi, I'm Mohammed Zaid.
- I'm a 3rd-year Computer Science & Mathematics student with hands-on experience in robotics, 
+ I'm a 3rd-year Mathematics and Computer Science student at UC San Diego with hands-on experience in robotics, 
  machine learning, and leading high-performing teams. I thrive on solving complex problems and 
  building innovative solutions that make a difference. Welcome to my digital space, where curiosity meets code.
  </motion.p>
