@@ -196,7 +196,7 @@ function App() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6, duration: 0.8 }}
                 >
-                  Computer Science & Mathematics graduate with experience in robotics, machine learning,
+                  Computer Science & Mathematics 3rd Year with experience in robotics, machine learning,
                   and team leadership. Passionate about solving complex problems and developing innovative solutions.
                 </motion.p>
 
