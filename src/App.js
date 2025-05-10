@@ -456,6 +456,7 @@ function App() {
  <span className="skill-badge">JavaScript</span>
  <span className="skill-badge">MATLAB</span>
  <span className="skill-badge">C</span>
+ <span className="skill-badge">Leetcode</span>
  </div>
  </motion.div>
  
