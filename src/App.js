@@ -408,6 +408,11 @@ function App() {
  <ul>
  <li>Architected a high-performance computational pattern recognition system utilizing Huffman tree algorithms in C, implementing optimized binary encoding techniques to achieve sub-linear time complexity for decryption operations while maintaining O(log n) space efficiency</li>
  </ul>
+ <h3>FIFA Rankings & Political Corruption Analysis</h3>
+ <p className="tech-stack">Python, Data Analysis, Pandas, Matplotlib, Statistical Modeling, Data Visualization</p>
+ <ul>
+ <li>Developed a comprehensive data science project analyzing the correlation between political corruption, press freedom, and national football performance by leveraging FIFA rankings, CPI, and GDP data; implemented statistical analysis and dynamic visualizations in Python to uncover patterns of institutional influence and sportswashing in international tournaments.</li>
+ </ul>
  <div className="project-visual">
  <div className="binary-tree">
  <div className="node root">H</div>
