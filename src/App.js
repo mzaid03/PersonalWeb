@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import './App.css';
 import profilePic from './images/pfp.jpg';
-import resumePDF from './resumesM.pdf';
+import resumePDF from './Mainresumes.pdf';
 
 function App() {
  const [activeSection, setActiveSection] = useState('about');
