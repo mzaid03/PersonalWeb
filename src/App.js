@@ -409,12 +409,12 @@ function App() {
  <li>Architected a high-performance computational pattern recognition system utilizing Huffman tree algorithms in C, implementing optimized binary encoding techniques to achieve sub-linear time complexity for decryption operations while maintaining O(log n) space efficiency</li>
  </ul>
  <h3>FIFA Rankings & Political Corruption Analysis</h3>
- <p className="tech-stack">HTML, CSS, JavaScript, Aladhan API, Open-Meteo API, Web UI/UX</p>
+ <p className="tech-stack">Python, Data Analysis, Pandas, Matplotlib, Statistical Modeling, Data Visualization</p>
  <ul>
  <li>Developed a comprehensive data science project analyzing the correlation between political corruption, press freedom, and national football performance by leveraging FIFA rankings, CPI, and GDP data; implemented statistical analysis and dynamic visualizations in Python to uncover patterns of institutional influence and sportswashing in international tournaments.</li>
  </ul>
  <h3>Islamic Prayer Reminder Website</h3>
- <p className="tech-stack">Python, Data Analysis, Pandas, Matplotlib, Statistical Modeling, Data Visualization</p>
+ <p className="tech-stack">HTML, CSS, JavaScript, Aladhan API, Open-Meteo API, Web UI/UX</p>
  <ul>
  <li>Designed and implemented a location-based Islamic prayer reminder web application that dynamically displays daily Salah times, Hijri dates, Quranic verses by integrating the Aladhan and Open-Meteo geolocation APIs; enabled both auto-location and manual ZIP/city entry for flexible user access across regions. Engineered a visually appealing and mobile-responsive interface using modern JavaScript, HTML, and CSS, with advanced features such as animated Dhikr page titles, interactive Hadith refresh, dark mode toggling, and an embedded PDF guide for learning how to pray—prioritizing both accessibility and spiritual enrichment through thoughtful design and real-time religious functionality.</li>
  </ul>
