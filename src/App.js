@@ -301,18 +301,6 @@ function App() {
 
  <motion.div className="experience-item card-effect" variants={staggerItem}>
  <div className="experience-header">
- <h3>UCSD Cafe Ventanas</h3>
- <p className="position">Student Operations Lead</p>
- <p className="location-date">La Jolla, CA | September 2022 - June 2024</p>
- </div>
- <ul>
- <li>Led and developed a diverse team of 80 staff members, implementing structured performance monitoring systems and conducting regular meetings that fostered effective interdepartmental communication</li>
- <li>Spearheaded strategic funding initiatives and financial oversight operations, continuously analyzing profit margins and implementing data-driven adjustments that optimized store profitability</li>
- </ul>
- </motion.div>
-
- <motion.div className="experience-item card-effect" variants={staggerItem}>
- <div className="experience-header">
  <h3>VEX Robotics</h3>
  <p className="position">Founder & President</p>
  <p className="location-date">Lake Elsinore, CA | June 2021 - July 2022</p>
