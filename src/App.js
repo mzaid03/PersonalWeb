@@ -412,6 +412,11 @@ function App() {
  <ul>
  <li>Designed and implemented a large-scale machine learning pipeline to detect IoT botnet intrusions using the UCI N-BaIoT dataset (7M+ records, 115 engineered features across 9 IoT devices and 8 attack types). Executed comprehensive preprocessing and eliminating 157k+ duplicates, addressing a 92.1% class imbalance through undersampling, and applying Min-Max normalization to ensure statistical robustness. Trained and optimized a Decision Tree classifier (depth=6, 500 samples/leaf) that achieved 99.96% accuracy, precision, recall, and F1-score on a 205k-sample test set with only 86 misclassifications, validated through correlation heatmap analysis and error diagnostics. Positioned the pipeline for scalability by proposing Support Vector Machines for enhanced generalization in high-dimensional feature spaces, demonstrating proficiency in big-data analytics, supervised learning, and applied cybersecurity modeling.</li>
  </ul>
+ <h3>SyncDocs</h3>
+ <p className="tech-stack">React, TipTap, Node.js, Yjs, WebSockets, HTML, CSS, JSON, TypeScript, npm, Docker, Vite</p>
+ <ul>
+ <li>Enabled seamless editing for 100+ users through React, TipTap, Node.js, and Yjs with sub-100ms latency, while implementing scalable collaboration via Redis-backed presence to ensure multi-user synchronization. Enhanced usability with a dark-mode UI and CI/CD pipelines that streamlined deployment processes, and achieved local accessibility by designing containerized microservices within a cloud-native architecture.</li>
+ </ul>
  <div className="project-visual">
  <div className="binary-tree">
  <div className="node root">H</div>
