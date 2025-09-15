@@ -6,13 +6,6 @@ import resumePDF from './Mohammed_Zaid_Resume.pdf';
 
 function App() {
  const [activeSection, setActiveSection] = useState('about');
- const [theme, setTheme] = useState(() => {
-  try {
-   return localStorage.getItem('theme') || 'dark';
-  } catch {
-   return 'dark';
-  }
- });
  const controls = useAnimation();
  
  useEffect(() => {
@@ -25,12 +18,6 @@ function App() {
  }
  });
  }, [controls]);
-
- useEffect(() => {
-  try {
-   localStorage.setItem('theme', theme);
-  } catch {}
- }, [theme]);
 
  const pageTransition = {
  hidden: { opacity: 0, y: 20 },
@@ -72,177 +59,8 @@ function App() {
  }
  };
 
- const styles = `
-	.app-shell {
-		--bg: #0b1020;
-		--panel: #0f172a;
-		--elev: #111827;
-		--text: #e6edf3;
-		--muted: #9fb0c0;
-		--primary: #22d3ee;
-		--accent: #7c3aed;
-		--ok: #10b981;
-		--card-border: rgba(255,255,255,0.08);
-		--shadow: 0 8px 24px rgba(0,0,0,0.35);
-		--ring: 0 0 0 1px rgba(34,211,238,0.35), 0 0 24px rgba(34,211,238,0.15) inset;
-		color: var(--text);
-		background: radial-gradient(1200px 600px at 10% -10%, rgba(34,211,238,0.08), transparent 40%),
-								radial-gradient(800px 400px at 110% 10%, rgba(124,58,237,0.08), transparent 40%),
-								linear-gradient(180deg, #070a15 0%, #0b1020 60%, #0b0f1a 100%);
-		min-height: 100vh;
-		position: relative;
-		overflow-x: hidden;
-		font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-	}
-	.app-shell[data-theme='light']{
-		--bg: #f5f8ff;
-		--panel: #ffffff;
-		--elev: #ffffff;
-		--text: #0b1220;
-		--muted: #485569;
-		--primary: #2563eb;
-		--accent: #7c3aed;
-		--ok: #059669;
-		--card-border: rgba(2,6,23,0.08);
-		--shadow: 0 8px 22px rgba(2,6,23,0.08);
-		--ring: 0 0 0 1px rgba(37,99,235,0.25), 0 0 18px rgba(37,99,235,0.12) inset;
-		background: radial-gradient(900px 420px at -10% -10%, rgba(37,99,235,0.08), transparent 40%),
-								radial-gradient(800px 400px at 110% 10%, rgba(124,58,237,0.08), transparent 40%),
-								linear-gradient(180deg, #eef3ff 0%, #f7f9ff 100%);
-	}
-	.app-shell .tech-grid::before {
-		content: "";
-		position: fixed;
-		inset: 0;
-		background: repeating-linear-gradient(
-			90deg,
-			transparent 0px,
-			transparent 47px,
-			rgba(255,255,255,0.04) 48px,
-			transparent 49px
-		),
-		repeating-linear-gradient(
-			0deg,
-			transparent 0px,
-			transparent 47px,
-			rgba(255,255,255,0.04) 48px,
-			transparent 49px
-		);
-		pointer-events: none;
-		mask-image: radial-gradient(60% 50% at 50% 30%, black 40%, transparent 85%);
-	}
-	.app-shell[data-theme='light'] .tech-grid::before { opacity: 0.4; }
-
-	nav {
-		position: sticky;
-		top: 0;
-		z-index: 30;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 14px 22px;
-		background: color-mix(in hsl, var(--bg) 86%, transparent);
-		backdrop-filter: saturate(140%) blur(10px);
-		border-bottom: 1px solid var(--card-border);
-	}
-	nav .name {
-		display: flex;
-		align-items: center;
-		gap: 10px;
-		font-weight: 700;
-		letter-spacing: .4px;
-	}
-	.brand-mark {
-		width: 22px; height: 22px; border-radius: 6px;
-		background: linear-gradient(135deg, var(--primary), var(--accent));
-		box-shadow: var(--ring);
-	}
-	nav ul { display: flex; gap: 10px; list-style: none; }
-	nav li {
-		cursor: pointer;
-		padding: 8px 12px;
-		border-radius: 10px;
-		color: var(--muted);
-		border: 1px solid transparent;
-		transition: .2s ease;
-	}
-	nav li:hover { color: var(--text); border-color: var(--card-border); background: rgba(255,255,255,0.03); }
-	nav li.active {
-		color: var(--text);
-		background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
-		border-color: var(--card-border);
-		box-shadow: inset 0 -2px 0 rgba(34,211,238,0.25);
-	}
-	.nav-right { display:flex; align-items:center; gap: 10px; }
-	.theme-toggle {
-		display:inline-flex; align-items:center; justify-content:center;
-		width: 36px; height: 36px; border-radius: 10px;
-		color: var(--text);
-		background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-		border: 1px solid var(--card-border);
-		box-shadow: var(--shadow);
-	}
-	.theme-toggle:hover { box-shadow: var(--ring); }
-
-	main { max-width: 1100px; margin: 28px auto; padding: 0 20px; }
-
-	.card-effect {
-		background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-		border: 1px solid var(--card-border);
-		border-radius: 16px;
-		box-shadow: var(--shadow);
-	}
-
-	.experience-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 16px; }
-	.experience-item { padding: 18px; }
-	.experience-header h3 { margin: 0 0 6px; }
-	.experience-item ul { margin: 10px 0 0 18px; color: var(--muted); }
-
-	.education-section .education-item { padding: 18px; }
-	.education-section .coursework { color: var(--muted); }
-
-	.projects-section .project-item { padding: 18px; }
-	.tech-stack { color: var(--muted); }
-
-	.skills-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 16px; }
-	.skills-group { padding: 18px; }
-	.skills-badges { display:flex; flex-wrap: wrap; gap: 8px; }
-	.skill-badge {
-		display:inline-block; padding: 6px 10px; border-radius: 10px; font-size: 0.9rem;
-		color: var(--text);
-		background: linear-gradient(180deg, rgba(34,211,238,0.15), rgba(124,58,237,0.10));
-		border: 1px solid var(--card-border);
-	}
-
-	.about-section .profile-container { position: relative; display:flex; align-items:center; justify-content:center; }
-	.profile-pic { border-radius: 14px; border: 1px solid var(--card-border); box-shadow: var(--shadow); }
-	.profile-spotlight { position:absolute; width: 70%; height: 70%; border-radius: 20px; filter: blur(40px); background: radial-gradient(ellipse at 50% 50%, rgba(34,211,238,0.20), transparent 60%); }
-
-	.hero-title { display:flex; align-items:center; gap: 10px; }
-	.hero-title:before, .hero-title:after { content: "/"; color: var(--primary); opacity: 0.6; }
-
-	.bio { color: var(--muted); }
-
-	.cta-container { display:flex; flex-wrap: wrap; gap: 10px; }
-	.cta-button {
-		padding: 10px 14px; border-radius: 12px; border: 1px solid var(--card-border);
-		background: linear-gradient(180deg, rgba(34,211,238,0.18), rgba(124,58,237,0.12));
-		color: var(--text); text-decoration: none;
-		box-shadow: var(--shadow);
-	}
-	.cta-button.secondary { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); }
-	.resume-button { background: linear-gradient(180deg, rgba(16,185,129,0.22), rgba(16,185,129,0.1)); border-color: rgba(16,185,129,0.35); }
-
-	footer { border-top: 1px solid var(--card-border); padding: 18px 20px; color: var(--muted); text-align:center; }
-
-	/* Tweak existing decorative shapes to fit theme */
-	.background-shapes .shape { opacity: 0.14; filter: blur(12px); }
- `;
-
  return (
- <div className="App app-shell" data-theme={theme}>
- <style>{styles}</style>
- <div className="tech-grid" />
+ <div className="App">
  <div className="background-shapes">
  <div className="shape shape-1"></div>
  <div className="shape shape-2"></div>
@@ -258,9 +76,8 @@ function App() {
  transition={{ duration: 0.5 }}
  whileHover={{ scale: 1.05 }}
  >
- <span className="brand-mark" /> Mohammed Zaid
+ Mohammed Zaid
  </motion.div>
- <div className="nav-right">
  <motion.ul
  initial={{ opacity: 0 }}
  animate={{ opacity: 1 }}
@@ -307,10 +124,6 @@ function App() {
  Skills
  </motion.li>
  </motion.ul>
- <button className="theme-toggle" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} aria-label="Toggle theme">
-  {theme === 'dark' ? '☾' : '☀︎'}
- </button>
- </div>
  </nav>
 
  <main>
