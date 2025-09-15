@@ -349,7 +349,7 @@ function App() {
  transition={{ delay: 0.5, duration: 0.7 }}
  >
  <h4>Relevant Coursework:</h4>
- <p>Advanced Data Structures, Software Engineering, Supervised Machine Learning, Components and Design Techniques for Digital Systems, Introduction to Numerical Analysis, Modern Algebra II</p>
+ <p>Advanced Data Structures, Software Engineering, Supervised Machine Learning, Components and Design Techniques for Digital Systems, Foundations in Numerical Analysis, Discrete Mathematics</p>
  </motion.div>
  </motion.div>
  <motion.div 
