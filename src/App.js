@@ -417,6 +417,11 @@ function App() {
  <ul>
  <li>Enabled seamless editing for 100+ users through React, TipTap, Node.js, and Yjs with sub-100ms latency, while implementing scalable collaboration via Redis-backed presence to ensure multi-user synchronization. Enhanced usability with a dark-mode UI and CI/CD pipelines that streamlined deployment processes, and achieved local accessibility by designing containerized microservices within a cloud-native architecture.</li>
  </ul>
+ <h3>PrioritiTask</h3>
+ <p className="tech-stack">React, Next.js (App Router), Node.js, TypeScript, Tailwind CSS, HTML, CSS, JSON, Prisma, PostgreSQL, REST APIs, npm, Docker, Git/GitHub, ESLint, PostCSS, Railway</p>
+ <ul>
+ <li>Architected and delivered a production-ready full stack to-do application using Next.js 14 App Router, React 18, Node.js 18, and TypeScript 5.5; implemented typed REST APIs with structured JSON errors, correct status codes, and cache control via no-store and timestamp cache busting; built a modular UI with 5 plus reusable components using Tailwind CSS 3.4 and shipped 6 plus UX enhancements including skeleton loading, a progress bar, Ctrl K search, sortable lists, clear completed, colored priority chips, and an animated refresh spinner; migrated persistence from SQLite to PostgreSQL with Prisma 5 schema modeling and migrations, enforced TLS on 100 percent of database connections via connection string injection, and added a liveness health endpoint; implemented offline first behavior with local storage that maintains 100 percent CRUD when DATABASE_URL is unavailable; containerized with a 2 stage Docker build, fixed build ordering and OpenSSL prerequisites, bound the server to 0.0.0.0:PORT for container networking, and achieved 100 percent deployment success on Railway; improved developer experience with one command startup using npm run dev, postinstall Prisma generate, TypeScript type checking, ESLint, and a feature branch Git and GitHub workflow.</li>
+ </ul>
  <div className="project-visual">
  <div className="binary-tree">
  <div className="node root">H</div>
