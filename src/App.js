@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import './App.css';
 import profilePic from './images/pfp.jpg';
-import resumePDF from './Mohammed_Zaid_Resume.pdf';
+import resumePDF from './Mohammed_Zaid_Resume_.pdf';
 
 function App() {
  const [activeSection, setActiveSection] = useState('about');
@@ -303,7 +303,7 @@ function App() {
  <div className="experience-header">
  <h3>VEX Robotics</h3>
  <p className="position">Founder & President</p>
- <p className="location-date">Lake Elsinore, CA | June 2021 - July 2022</p>
+ <p className="location-date">Lake Elsinore, CA | August 2021 - June 2022</p>
  </div>
  <ul>
  <li>Programmed autonomous object manipulation algorithms in C for the team's robot, serving as lead driver during testing, optimizing system performance through iterative debugging and real-time adjustments</li>
