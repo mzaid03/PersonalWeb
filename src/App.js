@@ -424,6 +424,11 @@ function App() {
  <ul>
  <li>Built a multi-tenant task management system leveraging Next.js and Supabase, achieving full tenant isolation through anonymous authentication and row-level security. Designed a PostgreSQL-backed architecture to ensure persistent data storage across user sessions. Developed a responsive, type-safe interface using TypeScript, incorporating smooth loading states and robust error handling to enhance user experience. Additionally, implemented real-time metrics, session reset functionality, and clear system feedback to support usability, reliability, and effective product demonstrations.</li>
  </ul>
+ <h3>Velix</h3>
+ <p className="tech-stack">Next.js, React, TypeScript, Supabase, PostgreSQL, Row-Level Security (RLS), Real-Time Subscriptions, Tailwind CSS, Git/GitHub, Vercel, GenAI Tooling</p>
+ <ul>
+ <li>Developed and deployed a real-time messaging application using Next.js and TypeScript, enabling seamless and reliable communication between users. Designed a secure PostgreSQL schema in Supabase with row-level security (RLS) to ensure that only authorized members could access messages. Engineered low-latency message delivery for instant synchronization and consistent state across clients. Additionally, integrated GenAI-assisted development tools to streamline workflows, automate repetitive tasks, and improve overall development efficiency.</li>
+ </ul>
  <div className="project-visual">
  <div className="binary-tree">
  <div className="node root">H</div>
