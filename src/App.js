@@ -429,19 +429,33 @@ function App() {
  <ul>
  <li>Developed and deployed a real-time messaging application using Next.js and TypeScript, enabling seamless and reliable communication between users. Designed a secure PostgreSQL schema in Supabase with row-level security (RLS) to ensure that only authorized members could access messages. Engineered low-latency message delivery for instant synchronization and consistent state across clients. Additionally, integrated GenAI-assisted development tools to streamline workflows, automate repetitive tasks, and improve overall development efficiency.</li>
  </ul>
- <div className="project-visual">
- <div className="binary-tree">
- <div className="node root">H</div>
- <div className="branches level-1">
- <div className="branch left">
- <div className="node">U</div>
- </div>
- <div className="branch right">
- <div className="node">F</div>
- </div>
- </div>
- </div>
- </div>
+<div className="project-visual">
+  <div className="binary-tree">
+    <div className="node root">H</div>
+
+    <div className="branches level-1">
+      {/* LEFT SIDE */}
+      <div className="branch left">
+        <div className="node">U</div>
+
+        {/* NEW LEVEL */}
+        <div className="branches level-2">
+          <div className="branch left">
+            <div className="node">T</div>
+          </div>
+          <div className="branch right">
+            <div className="node">V</div>
+          </div>
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="branch right">
+        <div className="node">F</div>
+      </div>
+    </div>
+  </div>
+</div>
  </motion.div>
  </motion.section>
  )}
