@@ -748,13 +748,14 @@
 
 .edu-icon {
   width: 420px;
-  height: auto;       /* 🔥 remove fixed height */
+  height: auto;     /* 🔥 important */
 }
 
 .edu-img {
   width: 100%;
-  height: auto;       /* 🔥 keep aspect ratio */
+  height: auto;     /* 🔥 THIS fixes stretching */
   display: block;
+  object-fit: contain; /* optional, safe fallback */
   border-radius: 16px;
   border: 2px solid #e0ead6;
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
