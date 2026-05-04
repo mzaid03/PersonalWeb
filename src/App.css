@@ -738,14 +738,6 @@
 
 .education-item {
   max-width: 60%;
-
-  /* 🔥 UCSD theme */
-  background: linear-gradient(135deg, #003A8F, #001F5B);
-  color: white;
-  padding: 20px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 205, 0, 0.4);
-  box-shadow: 0 10px 30px rgba(0, 58, 143, 0.4);
 }
 
 .education-decoration {
@@ -765,58 +757,6 @@
   display: block;
   object-fit: contain; /* optional, safe fallback */
   border-radius: 16px;
-  border: 3px solid #e0ead6;
+  border: 2px solid #e0ead6;
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-}
-
-@media (max-width: 768px) {
-  .education-section {
-    min-height: auto;
-    padding-bottom: 30px;
-  }
-
-  .education-item {
-    max-width: 100%;
-  }
-
-  .education-decoration {
-    position: relative;
-    right: auto;
-    top: auto;
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .edu-icon {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-  }
-
-  .edu-img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-
-.education-section h2 {
-  color: #FFCD00;
-}
-
-.education-header h3 {
-  color: #FFCD00;
-}
-
-.education-item {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 205, 0, 0.3);
-}
-
-.education-header h3 {
-  color: #FFCD00;
 }
