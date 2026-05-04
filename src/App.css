@@ -735,7 +735,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-right: 120px;  /* pushes it further right */
+  padding-right: 200px;  /* pushes it further right */
 }
 
 .edu-icon {
