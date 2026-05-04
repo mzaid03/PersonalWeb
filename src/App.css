@@ -731,25 +731,26 @@
   }
  }
 
- .education-decoration {
+.education-decoration {
+  width: 100%;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 25px;
 }
 
 .edu-icon {
-  width: 260px;   /* controls size */
-  height: 160px;  /* rectangular shape */
+  width: 80%;          /* takes most of the page */
+  max-width: 700px;    /* prevents it from being TOO huge on big screens */
+  height: 250px;       /* nice banner size */
   overflow: hidden;
-  border-radius: 16px; /* rounded rectangle */
+  border-radius: 16px;
 }
 
 .edu-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills nicely without stretching */
+  object-fit: cover;
   border-radius: 16px;
   border: 2px solid #e0ead6;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
