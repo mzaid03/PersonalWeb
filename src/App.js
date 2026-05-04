@@ -369,7 +369,7 @@ function App() {
   }}
   transition={{
     repeat: Infinity,
-    duration: 2.5,
+    duration: 4.5,
     ease: "easeInOut"
   }}
 >
