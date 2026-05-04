@@ -733,9 +733,10 @@
 
 .education-decoration {
   width: 100%;
-  margin-top: 30px;
   display: flex;
-  justify-content: flex-end; /* pushes it to the right */
+  justify-content: flex-end;
+  margin-top: -200px;   /* pulls it upward next to text */
+  padding-right: 40px;  /* pushes it further right */
 }
 
 .edu-icon {
