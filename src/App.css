@@ -742,8 +742,8 @@
 
 .education-decoration {
   position: absolute;
-  right: 0px;      /* more negative = more to the right */
-  top: 120px;        /* move image up/down */
+  right: 20px;      /* more negative = more to the right */
+  top: 160px;        /* move image up/down */
 }
 
 .edu-icon {
