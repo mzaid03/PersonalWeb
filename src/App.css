@@ -742,7 +742,7 @@
 
 .education-decoration {
   position: absolute;
-  right: -80px;      /* more negative = more to the right */
+  right: -40px;      /* more negative = more to the right */
   top: 120px;        /* move image up/down */
 }
 
