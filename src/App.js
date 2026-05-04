@@ -446,6 +446,8 @@ function App() {
  </motion.section>
  )}
 
+ 
+
  {activeSection === 'skills' && (
  <motion.section 
  key="skills"
