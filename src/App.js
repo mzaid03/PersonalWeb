@@ -3,6 +3,7 @@ import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import './App.css';
 import profilePic from './images/pfp.jpg';
 import resumePDF from './Mohammed_Zaid_Resume_.pdf';
+import ucsdImg from './images/forwebsiteucsd.jpg'; 
 
 function App() {
  const [activeSection, setActiveSection] = useState('about');
@@ -360,12 +361,9 @@ function App() {
  animate={{ opacity: 1, scale: 1 }}
  transition={{ delay: 0.7, duration: 0.5 }}
  >
- <motion.div 
- className="edu-icon"
- animate={controls}
- >
- 🎓
- </motion.div>
+<motion.div className="edu-icon" animate={controls}>
+  <img src={ucsdImg} alt="UCSD" className="edu-img" />
+</motion.div>
  </motion.div>
  </motion.section>
  )}
