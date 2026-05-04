@@ -730,3 +730,29 @@
   width: 100%;
   }
  }
+
+ .education-decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.edu-icon {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.edu-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #e0ead6;
+  box-shadow: 0 0 18px rgba(224, 234, 214, 0.35);
+}
