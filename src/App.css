@@ -760,3 +760,34 @@
   border: 2px solid #e0ead6;
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
+
+@media (max-width: 768px) {
+  .education-section {
+    min-height: auto;
+    padding-bottom: 30px;
+  }
+
+  .education-item {
+    max-width: 100%;
+  }
+
+  .education-decoration {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .edu-icon {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .edu-img {
+    width: 100%;
+    height: auto;
+  }
+}
