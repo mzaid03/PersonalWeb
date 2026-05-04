@@ -3,7 +3,7 @@ import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import './App.css';
 import profilePic from './images/pfp.jpg';
 import resumePDF from './Mohammed_Zaid_Resume_.pdf';
-import ucsdImg from './images/forwebsiteucsd.jpg'; 
+import ucsdImg from './images/ucsdwebpic.jpg'; 
 
 function App() {
  const [activeSection, setActiveSection] = useState('about');
