@@ -361,18 +361,7 @@ function App() {
  animate={{ opacity: 1, scale: 1 }}
  transition={{ delay: 0.7, duration: 0.5 }}
  >
-<motion.div
-  className="edu-icon"
-  animate={{
-    y: [0, -12, 0],
-    scale: [1, 1.04, 1],   // “heartbeat”
-  }}
-  transition={{
-    repeat: Infinity,
-    duration: 4.5,
-    ease: "easeInOut"
-  }}
->
+<motion.div className="edu-icon" animate={controls}>
   <img src={ucsdImg} alt="UCSD" className="edu-img" />
 </motion.div>
  </motion.div>
