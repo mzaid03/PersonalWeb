@@ -735,14 +735,16 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-right: -100px;  /* pushes it further right */
 }
 
 .edu-icon {
-  width: 420px;     /* big but controlled */
+  width: 420px;
   height: 260px;
   overflow: hidden;
   border-radius: 16px;
+
+  margin-left: auto;     /* pushes it to the right */
+  margin-right: 20px;    /* space from edge */
 }
 
 .edu-img {
