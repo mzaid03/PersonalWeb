@@ -361,12 +361,9 @@ function App() {
  animate={{ opacity: 1, scale: 1 }}
  transition={{ delay: 0.7, duration: 0.5 }}
  >
-<motion.img
-  src={ucsdImg}
-  alt="UCSD"
-  className="edu-img"
-  animate={controls}
-/>
+<motion.div className="edu-icon" animate={controls}>
+  <img src={ucsdImg} alt="UCSD" className="edu-img" />
+</motion.div>
  </motion.div>
  </motion.section>
  )}
