@@ -757,7 +757,7 @@
   display: block;
   object-fit: contain; /* optional, safe fallback */
   border-radius: 16px;
-  border: 2px solid #e0ead6;
+  border: 3px solid #e0ead6;
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
@@ -790,4 +790,27 @@
     width: 100%;
     height: auto;
   }
+}
+
+.education-section {
+  background: linear-gradient(135deg, #003A8F, #001F5B);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.education-section h2 {
+  color: #FFCD00;
+}
+
+.education-header h3 {
+  color: #FFCD00;
+}
+
+.education-item {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 205, 0, 0.3);
 }
