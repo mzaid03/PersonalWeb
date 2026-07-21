@@ -830,3 +830,55 @@
   z-index: 1;
   border-radius: 50%;
 }
+
+
+/* Cursor-following background glow */
+
+.App {
+  --mouse-x: 50vw;
+  --mouse-y: 50vh;
+  position: relative;
+  min-height: 100vh;
+  isolation: isolate;
+  overflow-x: hidden;
+}
+
+.cursor-glow {
+  position: fixed;
+  left: var(--mouse-x);
+  top: var(--mouse-y);
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  transition:
+    left 80ms ease-out,
+    top 80ms ease-out;
+
+  background: radial-gradient(
+    circle,
+    rgba(64, 145, 108, 0.32) 0%,
+    rgba(98, 195, 112, 0.18) 30%,
+    rgba(98, 195, 112, 0.08) 50%,
+    transparent 72%
+  );
+
+  filter: blur(18px);
+}
+
+nav,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Disable the cursor effect on phones and tablets */
+
+@media (hover: none), (pointer: coarse) {
+  .cursor-glow {
+    display: none;
+  }
+}

@@ -65,7 +65,21 @@ const heroBio =
   "Hey! I'm Mohammed Zaid, a Mathematics and Computer Science senior at UC San Diego, turning real-world problems into thoughtful, scalable solutions through code.";
 
  return (
- <div className="App">
+ <div
+  className="App"
+  onMouseMove={(event) => {
+    event.currentTarget.style.setProperty(
+      "--mouse-x",
+      `${event.clientX}px`
+    );
+
+    event.currentTarget.style.setProperty(
+      "--mouse-y",
+      `${event.clientY}px`
+    );
+  }}
+>
+<div className="cursor-glow" aria-hidden="true"></div>
  <div className="background-shapes">
  <div className="shape shape-1"></div>
  <div className="shape shape-2"></div>
