@@ -143,7 +143,17 @@ const heroBio =
  className="about-section"
  >
  <div className="profile-container">
- <motion.div className="profile-spotlight"></motion.div>
+ <motion.div
+  className="profile-ring"
+  animate={{
+    rotate: 360
+  }}
+  transition={{
+    duration: 8,
+    repeat: Infinity,
+    ease: "linear"
+  }}
+/>
  <motion.img 
  src={profilePic} 
  alt="Mohammed Zaid" 

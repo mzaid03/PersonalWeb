@@ -791,3 +791,46 @@
     height: auto;
   }
 }
+
+/* Animated profile-picture ring */
+
+.profile-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-ring {
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  z-index: 0;
+
+  background: conic-gradient(
+    from 0deg,
+    #1e3a29,
+    #62c370,
+    #d8f3dc,
+    #40916c,
+    #1e3a29
+  );
+
+  box-shadow:
+    0 0 20px rgba(64, 145, 108, 0.55),
+    0 0 45px rgba(98, 195, 112, 0.3);
+}
+
+.profile-ring::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  background: #f5f8f2;
+}
+
+.profile-pic {
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+}
