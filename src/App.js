@@ -482,7 +482,7 @@ function App() {
  </ul>
  <div className="project-visual">
  <div className="binary-tree">
- <div className="node root">D</div>
+ <div className="node root">W</div>
  <div className="branches level-1">
  <div className="branch left">
  <div className="node">S</div>
