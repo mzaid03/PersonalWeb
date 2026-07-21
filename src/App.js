@@ -643,6 +643,29 @@ function App() {
           <span className="skill-badge">Data integrity</span>
         </div>
       </motion.div>
+
+      {/* Certifications */}
+      <motion.div
+        className="skills-group card-effect"
+        variants={staggerItem}
+      >
+        <h3>Certifications</h3>
+
+        <div className="skills-badges">
+          <span className="skill-badge">
+            HackerRank Advanced Python
+          </span>
+          <span className="skill-badge">
+            HackerRank Advanced SQL
+          </span>
+          <span className="skill-badge">
+            HackerRank Advanced Go
+          </span>
+          <span className="skill-badge">
+            HackerRank Advanced JavaScript
+          </span>
+        </div>
+      </motion.div>
     </motion.div>
   </motion.section>
 )}
