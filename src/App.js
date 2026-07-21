@@ -499,73 +499,153 @@ function App() {
 
  
 
- {activeSection === 'skills' && (
- <motion.section 
- key="skills"
- variants={pageTransition}
- initial="hidden"
- animate="visible"
- exit="exit"
- className="skills-section"
- >
- <motion.h2
- initial={{ opacity: 0, x: -20 }}
- animate={{ opacity: 1, x: 0 }}
- transition={{ duration: 0.5 }}
- >
- Technical Skills
- </motion.h2>
- 
- <motion.div 
- className="skills-container"
- variants={staggerContainer}
- initial="hidden"
- animate="visible"
- >
- <motion.div className="skills-group card-effect" variants={staggerItem}>
- <h3>Languages</h3>
- <div className="skills-badges">
- <span className="skill-badge">Java</span>
- <span className="skill-badge">Python</span>
- <span className="skill-badge">JavaScript</span>
- <span className="skill-badge">MATLAB</span>
- <span className="skill-badge">C</span>
- </div>
- </motion.div>
- 
- <motion.div className="skills-group card-effect" variants={staggerItem}>
- <h3>Libraries & Tools</h3>
- <div className="skills-badges">
- <span className="skill-badge">React</span>
- <span className="skill-badge">Tailwind CSS</span>
- <span className="skill-badge">Next.js</span>
- <span className="skill-badge">Git</span>
- <span className="skill-badge">Node.js</span>
- <span className="skill-badge">Firebase</span>
- <span className="skill-badge">Figma</span>
- <span className="skill-badge">HTML</span>
- <span className="skill-badge">CSS</span>
- <span className="skill-badge">Leetcode</span>
- </div>
- </motion.div>
- 
- <motion.div className="skills-group card-effect" variants={staggerItem}>
- <h3>Managerial Skills</h3>
- <div className="skills-badges">
- <span className="skill-badge">Project management</span>
- <span className="skill-badge">Team leadership</span>
- <span className="skill-badge">Workflow optimization</span>
- <span className="skill-badge">Strategic thinking</span>
- <span className="skill-badge">UX design</span>
- <span className="skill-badge">Accessibility</span>
- <span className="skill-badge">Quality assurance</span>
- <span className="skill-badge">Version control</span>
- <span className="skill-badge">Data integrity</span>
- </div>
- </motion.div>
- </motion.div>
- </motion.section>
- )}
+{activeSection === 'skills' && (
+  <motion.section
+    key="skills"
+    variants={pageTransition}
+    initial="hidden"
+    animate="visible"
+    exit="exit"
+    className="skills-section"
+  >
+    <motion.h2
+      initial={{ opacity: 0, x: -20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      Technical Skills
+    </motion.h2>
+
+    <motion.div
+      className="skills-container"
+      variants={staggerContainer}
+      initial="hidden"
+      animate="visible"
+    >
+      {/* Programming Languages */}
+      <motion.div
+        className="skills-group card-effect"
+        variants={staggerItem}
+      >
+        <h3>Programming Languages</h3>
+
+        <div className="skills-badges">
+          <span className="skill-badge">Java</span>
+          <span className="skill-badge">Python</span>
+          <span className="skill-badge">JavaScript</span>
+          <span className="skill-badge">TypeScript</span>
+          <span className="skill-badge">C++</span>
+          <span className="skill-badge">C</span>
+          <span className="skill-badge">Go</span>
+          <span className="skill-badge">MATLAB</span>
+        </div>
+      </motion.div>
+
+      {/* Frameworks, Libraries, and Tools */}
+      <motion.div
+        className="skills-group card-effect"
+        variants={staggerItem}
+      >
+        <h3>Frameworks, Libraries & Tools</h3>
+
+        <div className="skills-badges">
+          <span className="skill-badge">React</span>
+          <span className="skill-badge">Next.js</span>
+          <span className="skill-badge">Node.js</span>
+          <span className="skill-badge">Tailwind CSS</span>
+          <span className="skill-badge">Redis</span>
+          <span className="skill-badge">Prisma</span>
+          <span className="skill-badge">TensorFlow</span>
+          <span className="skill-badge">Scikit-learn</span>
+          <span className="skill-badge">Pandas</span>
+          <span className="skill-badge">NumPy</span>
+          <span className="skill-badge">Firebase</span>
+          <span className="skill-badge">Git</span>
+          <span className="skill-badge">Figma</span>
+          <span className="skill-badge">HTML</span>
+          <span className="skill-badge">CSS</span>
+          <span className="skill-badge">Leetcode</span>
+        </div>
+      </motion.div>
+
+      {/* Cloud and DevOps */}
+      <motion.div
+        className="skills-group card-effect"
+        variants={staggerItem}
+      >
+        <h3>Cloud & DevOps</h3>
+
+        <div className="skills-badges">
+          <span className="skill-badge">AWS</span>
+          <span className="skill-badge">AWS EC2</span>
+          <span className="skill-badge">AWS S3</span>
+          <span className="skill-badge">AWS Lambda</span>
+          <span className="skill-badge">Docker</span>
+          <span className="skill-badge">CI/CD Pipelines</span>
+          <span className="skill-badge">Linux</span>
+          <span className="skill-badge">Microservices</span>
+          <span className="skill-badge">Railway</span>
+        </div>
+      </motion.div>
+
+      {/* Databases */}
+      <motion.div
+        className="skills-group card-effect"
+        variants={staggerItem}
+      >
+        <h3>Databases</h3>
+
+        <div className="skills-badges">
+          <span className="skill-badge">PostgreSQL</span>
+          <span className="skill-badge">SQL</span>
+          <span className="skill-badge">NoSQL</span>
+        </div>
+      </motion.div>
+
+      {/* Development Practices */}
+      <motion.div
+        className="skills-group card-effect"
+        variants={staggerItem}
+      >
+        <h3>Development Practices</h3>
+
+        <div className="skills-badges">
+          <span className="skill-badge">Agile</span>
+          <span className="skill-badge">SDLC</span>
+          <span className="skill-badge">
+            Debugging & Troubleshooting
+          </span>
+          <span className="skill-badge">Distributed Systems</span>
+          <span className="skill-badge">
+            Operational Excellence
+          </span>
+        </div>
+      </motion.div>
+
+      {/* Managerial Skills */}
+      <motion.div
+        className="skills-group card-effect"
+        variants={staggerItem}
+      >
+        <h3>Managerial Skills</h3>
+
+        <div className="skills-badges">
+          <span className="skill-badge">Project management</span>
+          <span className="skill-badge">Team leadership</span>
+          <span className="skill-badge">
+            Workflow optimization
+          </span>
+          <span className="skill-badge">Strategic thinking</span>
+          <span className="skill-badge">UX design</span>
+          <span className="skill-badge">Accessibility</span>
+          <span className="skill-badge">Quality assurance</span>
+          <span className="skill-badge">Version control</span>
+          <span className="skill-badge">Data integrity</span>
+        </div>
+      </motion.div>
+    </motion.div>
+  </motion.section>
+)}
  </AnimatePresence>
  </main>
 
