@@ -19,6 +19,7 @@ function App() {
  }
  });
  }, [controls]);
+ 
 
  const pageTransition = {
  hidden: { opacity: 0, y: 20 },
