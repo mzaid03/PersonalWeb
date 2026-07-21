@@ -8,53 +8,7 @@ import ucsdImg from './images/ucsdwebpic.jpg';
 function App() {
  const [activeSection, setActiveSection] = useState('about');
  const controls = useAnimation();
-const heroBio =
-  "Hey! I’m Mohammed Zaid, a Mathematics and Computer Science senior at UC San Diego, turning real-world problems into thoughtful, scalable solutions through code.";
-
-const mouseX = useMotionValue(-500);
-const mouseY = useMotionValue(-500);
-
-const smoothMouseX = useSpring(mouseX, {
-  stiffness: 120,
-  damping: 20
-});
-
-const smoothMouseY = useSpring(mouseY, {
-  stiffness: 120,
-  damping: 20
-});
-
-const handleMouseMove = (event) => {
-  mouseX.set(event.clientX);
-  mouseY.set(event.clientY);
-};
-
-const bioContainer = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.035,
-      delayChildren: 0.4
-    }
-  }
-};
-
-const bioWord = {
-  hidden: {
-    opacity: 0,
-    y: 15,
-    filter: "blur(5px)"
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    filter: "blur(0px)",
-    transition: {
-      duration: 0.4,
-      ease: "easeOut"
-    }
-  }
-}; 
+ 
  useEffect(() => {
  controls.start({
  y: [0, -10, 0],
