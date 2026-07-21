@@ -255,69 +255,121 @@ function App() {
  )}
 
  {activeSection === 'experience' && (
- <motion.section 
- key="experience"
- variants={pageTransition}
- initial="hidden"
- animate="visible"
- exit="exit"
- className="experience-section"
- >
- <motion.h2 
- initial={{ opacity: 0, x: -20 }}
- animate={{ opacity: 1, x: 0 }}
- transition={{ duration: 0.5 }}
- >
- Work & Leadership Experience
- </motion.h2>
- 
- <motion.div 
- className="experience-grid"
- variants={staggerContainer}
- initial="hidden"
- animate="visible"
- >
- <motion.div className="experience-item card-effect" variants={staggerItem}>
- <div className="experience-header">
- <h3>UCSD Associated Students</h3>
- <p className="position">Campus Wide Senator</p>
- <p className="location-date">La Jolla, CA | April 2025 - Present</p>
- </div>
- <ul>
- <li>Strategically managed an $8 million operational budget, implementing rigorous oversight processes and developing targeted funding initiatives that efficiently allocated resources across campus priorities</li>
- <li>Orchestrated management systems for 600+ student organizations, designing streamlined approval processes and resource allocation protocols that enhanced club operations and campus engagement</li>
- <li>Advocated for comprehensive student needs through data driven policy development, collaborating with administration to implement solutions that measurably improved campus experience and services</li>
- <li>Executed critical departmental decisions through structured analysis frameworks, ensuring alignment with strategic objectives while maintaining transparent communication with stakeholders</li>
- </ul>
- </motion.div>
+  <motion.section
+    key="experience"
+    variants={pageTransition}
+    initial="hidden"
+    animate="visible"
+    exit="exit"
+    className="experience-section"
+  >
+    <motion.h2
+      initial={{ opacity: 0, x: -20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      Work & Leadership Experience
+    </motion.h2>
 
- <motion.div className="experience-item card-effect" variants={staggerItem}>
- <div className="experience-header">
- <h3>UCSD Information Desk</h3>
- <p className="position">Student Administrative Support</p>
- <p className="location-date">La Jolla, CA | September 2024 - Present</p>
- </div>
- <ul>
- <li>Orchestrated real-time resource allocation system for optimizing student workflow efficiency, implementing data-driven scheduling algorithms that reduced station transition times by 15%</li>
- <li>Developed and executed escalation protocols for priority customer requests, implementing a structured methodology that ensured 99% on-time delivery of complex orders while maintaining quality standards</li>
- </ul>
- </motion.div>
+    <motion.div
+      className="experience-item card-effect"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.3, duration: 0.7 }}
+      whileHover={{
+        y: -10,
+        boxShadow: "0 15px 30px rgba(0,0,0,0.15)"
+      }}
+    >
+      <div className="experience-header">
+        <h3>Maroon Compatibility Group Inc.</h3>
+        <p className="position">Software Engineer Intern</p>
+        <p className="location-date">
+          Lake Elsinore, CA | June 2026 - July 2026
+        </p>
+      </div>
 
- <motion.div className="experience-item card-effect" variants={staggerItem}>
- <div className="experience-header">
- <h3>VEX Robotics</h3>
- <p className="position">Founder & President</p>
- <p className="location-date">Lake Elsinore, CA | August 2021 - June 2022</p>
- </div>
- <ul>
- <li>Programmed autonomous object manipulation algorithms in C for the team's robot, serving as lead driver during testing, optimizing system performance through iterative debugging and real-time adjustments</li>
- <li>Architected the robot's control systems using object-oriented design principles, developed comprehensive technical documentation including UML diagrams, and system architecture specifications</li>
- <li>Pioneered school's first-ever finals appearance in VEX Robotics competition, implementing advanced MatLab simulations for motion planning and mechanical stress analysis that secured 2nd place overall</li>
- </ul>
- </motion.div>
- </motion.div>
- </motion.section>
- )}
+      <ul>
+        <li>Developed 15 scalable features using React, TypeScript, and REST APIs, improving user engagement by 30%.</li>
+        <li>Debugged 30+ production issues using Agile development practices, increasing application reliability.</li>
+        <li>Built 10+ production UI components, reducing development time by 35% and improving code maintainability.</li>
+        <li>Reduced Front-End latency by 25% by optimizing component rendering and API integration, improving the app.</li>
+      </ul>
+
+      <div className="experience-header">
+        <h3>Freelance</h3>
+        <p className="position">Software Engineer</p>
+        <p className="location-date">
+          Lake Elsinore, CA | April 2025 - Present
+        </p>
+      </div>
+
+      <ul>
+        <li>Developed 20 responsive websites via HTML5, CSS3, and JavaScript, for owners to establish an online presence.</li>
+        <li>Architected polished brand interfaces using Flexbox, CSS Grid, and custom animations, improving usability.</li>
+        <li>Implemented responsive navigation, smooth-scroll routing, and menu features for a seamless user experience.</li>
+        <li>Collaborated with the client to gather feedback and refine site features based on evolving business needs.</li>
+      </ul>
+
+      <div className="experience-header">
+        <h3>Muslim Tech Collaborative</h3>
+        <p className="position">Member</p>
+        <p className="location-date">
+          La Jolla, CA | April 2024 - Present
+        </p>
+      </div>
+
+      <ul>
+        <li>Constructed 10+ full-stack apps using React/Node.js, applying agile sprints to boost member skills.</li>
+        <li>Developed ML pipelines with TensorFlow, streamlining preprocessing and training to reach 99% accuracy.</li>
+        <li>Led more than 30 collaborative projects, enforcing Git/Agile practices to cut delivery time by 35%.</li>
+        <li>Facilitated 10+ resume workshops, creating ATS-ready templates that improved internship callbacks by 30%.</li>
+      </ul>
+
+      <div className="experience-header">
+        <h3>UCSD Associated Students</h3>
+        <p className="position">Campus Wide Senator</p>
+        <p className="location-date">
+          La Jolla, CA | April 2025 - Present
+        </p>
+      </div>
+
+      <ul>
+        <li>Strategically managed an $8 million operational budget, implementing rigorous oversight processes and developing targeted funding initiatives that efficiently allocated resources across campus priorities</li>
+        <li>Orchestrated management systems for 600+ student organizations, designing streamlined approval processes and resource allocation protocols that enhanced club operations and campus engagement</li>
+        <li>Advocated for comprehensive student needs through data driven policy development, collaborating with administration to implement solutions that measurably improved campus experience and services</li>
+        <li>Executed critical departmental decisions through structured analysis frameworks, ensuring alignment with strategic objectives while maintaining transparent communication with stakeholders</li>
+      </ul>
+
+      <div className="experience-header">
+        <h3>UCSD Information Desk</h3>
+        <p className="position">Student Administrative Support</p>
+        <p className="location-date">
+          La Jolla, CA | September 2024 - Present
+        </p>
+      </div>
+
+      <ul>
+        <li>Orchestrated real-time resource allocation system for optimizing student workflow efficiency, implementing data-driven scheduling algorithms that reduced station transition times by 15%</li>
+        <li>Developed and executed escalation protocols for priority customer requests, implementing a structured methodology that ensured 99% on-time delivery of complex orders while maintaining quality standards</li>
+      </ul>
+
+      <div className="experience-header">
+        <h3>VEX Robotics</h3>
+        <p className="position">Founder &amp; President</p>
+        <p className="location-date">
+          Lake Elsinore, CA | August 2021 - June 2022
+        </p>
+      </div>
+
+      <ul>
+        <li>Programmed autonomous object manipulation algorithms in C for the team's robot, serving as lead driver during testing, optimizing system performance through iterative debugging and real-time adjustments</li>
+        <li>Architected the robot's control systems using object-oriented design principles, developed comprehensive technical documentation including UML diagrams, and system architecture specifications</li>
+        <li>Pioneered school's first-ever finals appearance in VEX Robotics competition, implementing advanced MatLab simulations for motion planning and mechanical stress analysis that secured 2nd place overall</li>
+      </ul>
+    </motion.div>
+  </motion.section>
+)}
 
  {activeSection === 'education' && (
  <motion.section 
