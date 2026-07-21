@@ -794,16 +794,19 @@
 
 /* Animated profile-picture ring */
 
+/* Animated profile picture and ring */
+
 .profile-container {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transform-origin: center;
 }
 
 .profile-ring {
   position: absolute;
-  inset: -10px;
+  inset: -7px;
   border-radius: 50%;
   z-index: 0;
 
@@ -821,16 +824,9 @@
     0 0 45px rgba(98, 195, 112, 0.3);
 }
 
-.profile-ring::after {
-  content: "";
-  position: absolute;
-  inset: 6px;
-  border-radius: 50%;
-  background: #f5f8f2;
-}
-
 .profile-pic {
   position: relative;
+  display: block;
   z-index: 1;
   border-radius: 50%;
 }

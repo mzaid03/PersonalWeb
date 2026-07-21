@@ -142,39 +142,54 @@ const heroBio =
  exit="exit"
  className="about-section"
  >
- <div className="profile-container">
- <motion.div
-  className="profile-ring"
-  animate={{
-    rotate: 360
+<motion.div
+  className="profile-container"
+  whileHover={{
+    scale: 1.05
   }}
   transition={{
-    duration: 8,
-    repeat: Infinity,
-    ease: "linear"
+    type: "spring",
+    stiffness: 220,
+    damping: 18
   }}
-/>
- <motion.img 
- src={profilePic} 
- alt="Mohammed Zaid" 
- className="profile-pic"
- initial={{ opacity: 0, scale: 0.8 }}
- animate={{ 
- opacity: 1, 
- scale: 1,
- rotate: [0, 5, 0, -5, 0]
- }}
- transition={{ 
- duration: 1.2,
- rotate: { repeat: 0, duration: 1.5 }
- }}
- whileHover={{ 
- scale: 1.05,
- boxShadow: "0 8px 20px rgba(0,0,0,0.2)",
- transition: { duration: 0.3 }
- }}
- />
- </div>
+>
+  <motion.div
+    className="profile-ring"
+    animate={{
+      rotate: 360
+    }}
+    transition={{
+      duration: 8,
+      repeat: Infinity,
+      ease: "linear"
+    }}
+  />
+
+  <motion.img
+    src={profilePic}
+    alt="Mohammed Zaid"
+    className="profile-pic"
+    initial={{
+      opacity: 0,
+      scale: 0.8
+    }}
+    animate={{
+      opacity: 1,
+      scale: 1,
+      rotate: [0, 5, 0, -5, 0]
+    }}
+    transition={{
+      duration: 1.2,
+      rotate: {
+        repeat: 0,
+        duration: 1.5
+      }
+    }}
+    whileHover={{
+      boxShadow: "0 8px 25px rgba(0,0,0,0.25)"
+    }}
+  />
+</motion.div>
 
  <motion.div
  className="about-content"
