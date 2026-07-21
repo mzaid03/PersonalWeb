@@ -807,6 +807,26 @@
   transform-origin: center;
 }
 
+.profile-ring {
+  position: absolute;
+  inset: -7px;
+  border-radius: 50%;
+  z-index: 0;
+
+  background: conic-gradient(
+    from 0deg,
+    #1e3a29,
+    #62c370,
+    #d8f3dc,
+    #40916c,
+    #1e3a29
+  );
+
+  box-shadow:
+    0 0 20px rgba(64, 145, 108, 0.55),
+    0 0 45px rgba(98, 195, 112, 0.3);
+}
+
 .profile-pic {
   display: block;
   width: 100%;
@@ -819,7 +839,6 @@
     0 0 20px rgba(64, 145, 108, 0.4),
     0 12px 30px rgba(0, 0, 0, 0.18);
 }
-
 @media (max-width: 768px) {
   .profile-container {
     width: min(75vw, 310px);
@@ -827,7 +846,6 @@
     margin: 0 auto 2rem;
   }
 }
-
 
 /* Cursor-following background glow */
 
