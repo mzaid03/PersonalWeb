@@ -61,6 +61,9 @@ function App() {
  }
  };
 
+const heroBio =
+  "Hey! I’m Mohammed Zaid, a Mathematics and Computer Science senior at UC San Diego, turning real-world problems into thoughtful, scalable solutions through code.";
+
  return (
  <div className="App">
  <div className="background-shapes">
@@ -194,14 +197,46 @@ function App() {
  </motion.p>
  </motion.div>
 
- <motion.p 
- className="bio"
- initial={{ opacity: 0, y: 20 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ delay: 0.6, duration: 0.8 }}
- >
-Hey! I'm Mohammed Zaid, a Mathematics and Computer Science senior at UC San Diego, turning real-world problems into thoughtful, scalable solutions through code.
- </motion.p>
+ <motion.p
+  className="bio"
+  initial="hidden"
+  animate="visible"
+  variants={{
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.04,
+        delayChildren: 0.3
+      }
+    }
+  }}
+>
+  {heroBio.split(" ").map((word, index) => (
+    <motion.span
+      key={index}
+      style={{
+        display: "inline-block",
+        marginRight: "0.3rem"
+      }}
+      variants={{
+        hidden: {
+          opacity: 0,
+          y: 15
+        },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.35,
+            ease: "easeOut"
+          }
+        }
+      }}
+    >
+      {word}
+    </motion.span>
+  ))}
+</motion.p>
 
  <motion.div 
  className="cta-container"
