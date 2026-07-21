@@ -845,6 +845,7 @@
     width: min(75vw, 310px);
     height: min(75vw, 310px);
     margin: 0 auto 2rem;
+    left: -12px;
   }
 }
 
