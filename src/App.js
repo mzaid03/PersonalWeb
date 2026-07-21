@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import {motion, AnimatePresence, useAnimation, useMotionValue, useSpring
-} from 'framer-motion';
+import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import './App.css';
 import profilePic from './images/pfp.jpg';
 import resumePDF from './Mohammed_Zaid_Resume.pdf';
