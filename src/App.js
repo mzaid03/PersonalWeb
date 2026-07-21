@@ -62,7 +62,7 @@ function App() {
  };
 
 const heroBio =
-  "Hey! I’m Mohammed Zaid, a Mathematics and Computer Science senior at UC San Diego, turning real-world problems into thoughtful, scalable solutions through code.";
+  "Hey! I'm Mohammed Zaid, a Mathematics and Computer Science senior at UC San Diego, turning real-world problems into thoughtful, scalable solutions through code.";
 
  return (
  <div className="App">
