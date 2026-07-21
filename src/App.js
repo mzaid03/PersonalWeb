@@ -200,10 +200,7 @@ function App() {
  animate={{ opacity: 1, y: 0 }}
  transition={{ delay: 0.6, duration: 0.8 }}
  >
- Hi, I am Mohammed Zaid.
- I am a graduate in Mathematics & Computer Science from University of California, San Diego, with hands-on experience in robotics, 
- machine learning, front-end and back-end development, and leading high-performing teams. I thrive on solving complex problems 
- and building innovative solutions that make a difference. Welcome to my digital space, where curiosity meets code.
+Hey! I'm Mohammed Zaid, a Mathematics and Computer Science senior at UC San Diego, turning real-world problems into thoughtful, scalable solutions through code.
  </motion.p>
 
  <motion.div 
