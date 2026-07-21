@@ -170,17 +170,12 @@ const heroBio =
   <motion.div
     className="profile-ring"
     animate={{
-      filter: [
-        "hue-rotate(0deg)",
-        "hue-rotate(45deg)",
-        "hue-rotate(0deg)"
-      ],
-      scale: [1, 1.015, 1]
+      rotate: 360
     }}
     transition={{
-      duration: 5,
+      duration: 8,
       repeat: Infinity,
-      ease: "easeInOut"
+      ease: "linear"
     }}
   />
 
@@ -194,14 +189,18 @@ const heroBio =
     }}
     animate={{
       opacity: 1,
-      scale: 1
+      scale: 1,
+      rotate: [0, 5, 0, -5, 0]
     }}
     transition={{
       duration: 1.2,
-      ease: "easeOut"
+      rotate: {
+        repeat: 0,
+        duration: 1.5
+      }
     }}
     whileHover={{
-      boxShadow: "0 10px 30px rgba(0,0,0,0.25)"
+      boxShadow: "0 8px 25px rgba(0,0,0,0.25)"
     }}
   />
 </motion.div>

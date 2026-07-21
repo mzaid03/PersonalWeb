@@ -796,8 +796,6 @@
 
 /* Animated profile picture and ring */
 
-/* Rounded animated profile picture */
-
 .profile-container {
   position: relative;
   display: inline-flex;
@@ -809,8 +807,8 @@
 .profile-ring {
   position: absolute;
   inset: -7px;
+  border-radius: 50%;
   z-index: 0;
-  border-radius: 28px;
 
   background: conic-gradient(
     from 0deg,
@@ -830,8 +828,7 @@
   position: relative;
   display: block;
   z-index: 1;
-  border-radius: 22px;
-  object-fit: cover;
+  border-radius: 50%;
 }
 
 
