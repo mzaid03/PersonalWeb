@@ -227,7 +227,15 @@ const heroBio =
  initial="hidden"
  animate="visible"
  >
- <motion.p variants={staggerItem}>mdyasinzaidabir@gmail.com | San Diego, CA</motion.p>
+ <motion.p variants={staggerItem}>
+  <a
+    href="mailto:mdyasinzaidabir@gmail.com"
+    className="email-link"
+  >
+    mdyasinzaidabir@gmail.com
+  </a>
+  {" | San Diego, CA"}
+</motion.p>
  <motion.p variants={staggerItem}>US Citizen</motion.p>
 
  <motion.p variants={staggerItem}>

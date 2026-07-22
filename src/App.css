@@ -901,3 +901,30 @@ footer {
     display: none;
   }
 }
+
+.email-link {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.email-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: #40916c;
+  transition: width 0.3s ease;
+}
+
+.email-link:hover {
+  color: #40916c;
+}
+
+.email-link:hover::after {
+  width: 100%;
+}
