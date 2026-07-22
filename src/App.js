@@ -244,7 +244,7 @@ const heroBio =
  </motion.p>
  </motion.div>
 
- <motion.p
+<motion.p
   className="bio"
   initial="hidden"
   animate="visible"
@@ -263,18 +263,27 @@ const heroBio =
       key={index}
       style={{
         display: "inline-block",
-        marginRight: "0.3rem"
+        marginRight: "0.3rem",
+        willChange: "opacity, transform, filter, text-shadow"
       }}
       variants={{
         hidden: {
           opacity: 0,
-          y: 15
+          y: 15,
+          filter: "blur(7px)",
+          textShadow: "0 0 0px rgba(64, 145, 108, 0)"
         },
         visible: {
           opacity: 1,
           y: 0,
+          filter: "blur(0px)",
+          textShadow: [
+            "0 0 0px rgba(64, 145, 108, 0)",
+            "0 0 18px rgba(64, 145, 108, 0.9)",
+            "0 0 7px rgba(64, 145, 108, 0.3)"
+          ],
           transition: {
-            duration: 0.35,
+            duration: 0.7,
             ease: "easeOut"
           }
         }

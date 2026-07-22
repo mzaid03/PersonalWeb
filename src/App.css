@@ -928,3 +928,9 @@ footer {
 .email-link:hover::after {
   width: 100%;
 }
+
+.glowing-bio-word {
+  display: inline-block;
+  margin-right: 0.3rem;
+  will-change: opacity, transform, filter, text-shadow;
+}
